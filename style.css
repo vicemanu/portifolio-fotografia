@@ -65,6 +65,57 @@ h2 {
     background: url(img/img1.jpg) no-repeat center center;
     background-size: cover;
     box-shadow: 3px 5px 20px 2px black;
+    
+}
+
+
+
+.btnpc {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+
+
+   
+}
+
+.btnpc::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #000000b9;
+    transform: skew(28deg,30deg) rotatey(-30deg);
+}
+
+
+.btnpc::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #000000b9;
+    transform: skew(-28deg,-30deg) rotatey(30deg);
+}
+
+#btnhv:hover ::before {
+    border-top: 30px solid #000000 !important;
+}
+
+#btnhv:hover ::after {
+    border-top: 30px solid #000000 !important;
+}
+
+
+
+
+#projetos {
+    display: none;
 }
 
 #novo {
