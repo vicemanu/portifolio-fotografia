@@ -44,8 +44,8 @@ function inicia() {
     maxImg = imgs.length-1;
     carregarImg(imgAtual);
     tmp = setInterval(trocar, 4000);
-    cont = document.getElementById("projetos")
-    var p = 0
+    cont = document.getElementById("projetos");
+    var p = 0;
 
 }
 

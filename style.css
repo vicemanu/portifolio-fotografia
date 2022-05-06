@@ -298,25 +298,26 @@ h2 {
     box-shadow: 4px 8px 14px rgba(0, 0, 0, 0.589);
 } 
 
-
+/* ----------------------------------------------------------------------- */
 
 #sobmim {
     background-color: black;
     display: flex;
-    height: 550px;
+    flex-wrap: wrap;
+    max-height: 100%;
     justify-content: space-around;
 }
 
 .fsobmim {
     padding: 50px 20px;
-    width: 600px;
-    height: 450px;
+    max-width: 600px;
+    max-height: 450px;
     border-radius: 20px;
 }
 
 .txt {
-    padding-top: 30px;
-    width: 600px;
+    padding: 30px 15px 0px;
+    max-width: 600px;
     
     
 }
@@ -333,37 +334,30 @@ h2 {
 
 }
 
-#contate {
-    background: black;
-    height: 600px;
-    position: relative;
-}
 
-#contate form {
-    position: absolute;
-    top: -80px;
-    right: 80px;
+
+#sobmim form {
+    margin-top: -50px;
     width: 520px;
     height: 550px;
-    margin: auto;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 3px 11px 0px rgba(255, 255, 255, 0.384);
 }
 
-#contate form h3 {
+#sobmim form h3 {
     padding: 15px 25px;
     font-size: 2em;
     font-family: 'Indie Flower', cursive;
 }
 
-#contate form p {
+#sobmim form p {
     padding-left: 20px;
     font-size: 1.5em;
     font-family: 'Indie Flower', cursive;
 }
 
-#contate input {
+#sobmim input {
     margin-left: 20px;
     padding: 5px 20px 0px 20px;
     border-radius: 10px;
@@ -396,8 +390,7 @@ h2 {
 
 .irgl {
     margin-top: 80px;
-    float: left;
-    margin-left: 140px;
+    margin-left: 120px;
     text-decoration: none;
 }
 
@@ -413,3 +406,47 @@ h2 {
     width: 400px;
 }
 
+
+@media screen and (max-width:1300px) {
+    .irgl {
+        display: none;
+    }
+
+    #sobmim form {
+        margin-top: 50px;
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width:1220px){
+
+    #grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    #grid img {
+        width: 380px;
+        height: 280px;
+    }
+
+    .fsobmim {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+
+    #sobmim form {
+        margin-top: 30px;
+        max-width: 380px;
+    }
+
+    #sobmim input {
+        max-width: 300px;
+    }
+
+
+    
+}
