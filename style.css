@@ -464,6 +464,13 @@ h2 {
 
 @media screen and (max-width:1220px){
 
+    #novo {
+    
+        width: 100%;
+    
+    }
+
+
     #grid {
         display: flex;
         flex-wrap: wrap;
@@ -494,6 +501,19 @@ h2 {
 
     
 }
+
+@media screen and (max-width:1000px){
+
+    #novo {
+        display: none;
+    
+    }
+
+    #galeria {
+        margin-top: 60px;
+    }
+}
+
 
 @media screen and (max-width:820px){
 
@@ -527,12 +547,26 @@ h2 {
 
 }
 
+
+@media screen and (max-width:460px){
+
+    #log {
+        padding-left: 90px;
+    }
+
+}
+
 @media screen and (max-width:400px){
 
 
     #log {
-        padding-left: 70px;
+        padding-left: 50px;
     }
 
+
+    #grid img {
+        width: 360px;
+        height: 280px;
+    }
 }
 
