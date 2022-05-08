@@ -45,17 +45,17 @@ function inicia() {
     carregarImg(imgAtual);
     tmp = setInterval(trocar, 4000);
     cont = document.getElementById("projetos");
-    var p = 0;
+    var p = 1;
 
 }
 
 function display() {
-    
+
     if (p == 0) {
-        cont.style.display = "block";
-        p ++
-    } else {
         cont.style.display = "none";
+        p++
+    } else {
+        cont.style.display = "block";
         p = 0
     }
 }
