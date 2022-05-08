@@ -29,6 +29,40 @@ header {
     padding-left: 50px;
 }
 
+
+#mobile {
+    display: none;
+    
+}
+
+#desktop {
+    display: block;
+}
+
+#mobile i {
+    color: white;
+    font-size: 2em;
+}
+#cxmb {
+    display: none;
+    position: absolute;
+    top: 120;
+    right: 0;
+    width: 300px;
+    height: 215px;
+    background-color: black;
+    border-radius: 20px 0px 20px 20px;
+
+}
+
+#mobile a {
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid white;
+    
+    
+}
+
 menu {
     float: right;
     margin-top: 30px;
@@ -74,14 +108,18 @@ h2 {
     
 }
 
-
-#btnhv {
+.cto {
     width: 300px;
     height: 510px;
     display: inline-block;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+
+#btnhv {
+    
 }
 
 
@@ -455,6 +493,19 @@ h2 {
 
 
     
+}
+
+@media screen and (max-width:820px){
+
+    #mobile {
+        display: block;
+
+    }
+    #desktop {
+        display: none;
+    }
+
+
 }
 
 

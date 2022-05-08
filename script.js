@@ -11,7 +11,8 @@ var tmp;
 
 var cont;
 var p;
-
+var cxmb;
+var m;
 
 function preCarregamento() {
         var s = 1;
@@ -45,7 +46,9 @@ function inicia() {
     carregarImg(imgAtual);
     tmp = setInterval(trocar, 4000);
     cont = document.getElementById("projetos");
-    var p = 1;
+    p = 1;
+    cxmb = document.getElementById("cxmb");
+    m = 0
 
 }
 
@@ -59,6 +62,25 @@ function display() {
         p = 0
     }
 }
+
+
+
+// botão do menu
+
+
+function menu() {
+
+    if (m == 0) {
+        cxmb.style.display = "none";
+        m++
+    } else {
+        cxmb.style.display = "block";
+        m = 0
+    }
+}
+
+
+
 
 window.addEventListener("load",inicia);
 

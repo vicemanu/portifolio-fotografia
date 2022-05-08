@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Portfólio fotografico</title>
 </head>
 <body>
     <header>
         <img id="log" src="img/logo.png" alt="">
-        <menu>
-            <a href="#novo">Novas imagens</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#sobmim">Sobre mim</a>
-            <a href="#contato">Contate me</a>
+        <menu id="desktop">  
+                <a href="#novo">Novas imagens</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#sobmim">Sobre mim</a>
+                <a href="#contato">Contate me</a>
+        </menu>
+
+        <menu id="mobile">  
+            <i class="bi bi-three-dots" onclick="menu()"></i>
+            <div id="cxmb">
+                <a href="#novo">Novas imagens</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#sobmim">Sobre mim</a>
+                <a href="#contato">Contate me</a>
+            </div>
+            
         </menu>
     </header>
     <main>
         <div id="principal">
-
-            <a href="#btnhv" id="btnhv" onclick="display()"><div class="btnpc"></div></a>
-            
+            <div class="cto">
+                <a href="#btnhv" id="btnhv" onclick="display()"><div class="btnpc"></div></a>
+            </div>
         </div>
 
         <div id="projetos">
