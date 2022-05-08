@@ -505,6 +505,11 @@ h2 {
         display: none;
     }
 
+    #log {
+        padding-left: 290px;
+    }
+
+
 
 }
 
@@ -521,3 +526,13 @@ h2 {
     }
 
 }
+
+@media screen and (max-width:400px){
+
+
+    #log {
+        padding-left: 70px;
+    }
+
+}
+
