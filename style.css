@@ -456,3 +456,13 @@ h2 {
 
     
 }
+
+
+@media screen and (max-width:600px){
+
+    #principal {
+        height: 610px;
+
+    }
+
+}
